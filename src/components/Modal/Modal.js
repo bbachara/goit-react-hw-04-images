@@ -14,6 +14,6 @@ const Modal = ({ imageUrl, onClose }) => {
 export default Modal;
 
 Modal.propTypes = {
-  imageUrl: PropTypes.string,
-  onClose: PropTypes.func,
+  imageUrl: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 };

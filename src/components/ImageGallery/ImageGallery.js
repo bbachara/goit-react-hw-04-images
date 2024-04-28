@@ -20,5 +20,5 @@ export default ImageGallery;
 
 ImageGallery.propTypes = {
   images: PropTypes.array,
-  openImageClick: PropTypes.func,
+  onImageClick: PropTypes.func,
 };

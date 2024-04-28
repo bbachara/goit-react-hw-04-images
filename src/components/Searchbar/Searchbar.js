@@ -6,7 +6,9 @@ const Searchbar = ({ onSubmit }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit(searchTerm);
+    if (searchTerm.trim()) {
+      onSubmit(searchTerm.trim());
+    }
   };
 
   return (
@@ -32,5 +34,5 @@ const Searchbar = ({ onSubmit }) => {
 export default Searchbar;
 
 Searchbar.propTypes = {
-  onSubmit: PropTypes.func,
+  onSubmit: PropTypes.func.isRequired,
 };
